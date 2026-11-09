@@ -17,11 +17,11 @@ Code:
             return `${this.name} earns ${this._baseSalary}`;
         }
     }
-readonly modifier can stop a property from being reassigned after initialization. The id value cannot be reassigned after the object is created. you can only view the value but can't edit it.
-Code:
     class User {
     constructor(public readonly id: number) {}
     }
 
+readonly modifier can stop a property from being reassigned after initialization. The id value cannot be reassigned after the object is created. you can only view the value but can't edit it.
+    
 Conclusion:
 In summary, public allowed general access. private restricted access to the class.However protected allowed access to child classes and readonly prevented reassignment. Choosing the appropriate modifier helps maintain encapsulation and protect class data.
