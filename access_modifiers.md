@@ -3,14 +3,15 @@ Introduction:
 Access modifiers controls how class properties and methods can be accessed. they are mainly used for protect data and implement encapsulation. TypeScript provides public, private, protected, and readonly access modifiers.
 
 Public modifier allows property or method access anywhere, even it also allow it to go outside the class. private modifier restricts access to the class where the property or method is declared. It helps protect internal data from direct access. protected modifier allows access inside the declaring class and its child classes, but not directly from outside.
+
 Code:
-    class Employee {
+
+     class Employee {
         constructor(
             public name: string,
             private _baseSalary: number
         ) {}
     }
-
     class Manager extends Employee {
         describe(): string {
             return `${this.name} earns ${this._baseSalary}`;
